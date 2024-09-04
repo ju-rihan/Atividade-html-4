@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Encomendar Bolo</title>
+  </head>
+  <body>
+    <div>
+      <header>
+        <h1>Pães Doces E bolos</h1>
+        <ul>
+          <li>
+            <a href="index.html">Página Principal</a>
+          </li>
+
+          <li>
+            <a href="index_encomendas.html">Encomendas Bolo</a>
+          </li>
+        </ul>
+      </header>
+      <main>
+        <h2>Encomendar Bolos</h2>
+        <form action="" method="get">
+          <label for="Nome">Nome:</label>
+          <input
+            type="text"
+            id="Nome"
+            placeholder="Informe o Nome"
+            maxlength="35"
+            size="35"
+          />
+          <label for="DDD">DDD:</label>
+          (<input
+            type="text"
+            id="DDD"
+            placeholder="DDD"
+            maxlength="2"
+            size="1"
+          />)
+          <label for="Telefone">Telefone:</label>
+          <input
+            type="text"
+            id="Telefone"
+            placeholder="Telefone"
+            maxlength="10"
+            size="10"
+          />
+          <br />
+          <br />
+          <table border>
+            <caption>
+              Bolos
+            </caption>
+            <tr>
+              <th>
+                <img
+                  src="imagens/Bolo01.png"
+                  alt="Bolo de Chocolate"
+                  width="200"
+                  height="100%"
+                />
+              </th>
+              <th>
+                <img
+                  src="imagens/Bolo02.png"
+                  alt="Bolo de Frutas"
+                  width="200"
+                  height="100%"
+                />
+              </th>
+              <th>
+                <img
+                  src="imagens/Bolo03.png"
+                  alt="Bolo Misto"
+                  width="200"
+                  height="100%"
+                />
+              </th>
+            </tr>
+            <tr>
+              <th>Chocolate</th>
+              <th>Frutas</th>
+              <th>Misto</th>
+            </tr>
+          </table>
+          <br />
+
+          <label for="Sabor">Sabor:</label>
+          <select name="Sabor" id="Sabor">
+            <option value="" selected disabled>Escolha...</option>
+            <option value="Chocolate">Chocolate</option>
+            <option value="Frutas">Frutas</option>
+            <option value="Misto">Misto</option>
+          </select>
+          <label for="Tipo">Tipo:</label>
+          <input type="radio" id="Simples" name="seleção" value="1" />
+          <label for="Simples">Simples</label>
+          <input type="radio" id="Decorado" name="seleção" value="2" />
+          <label for="Decorado">Decorado</label>
+          <br />
+          <br />
+          <label for="Tamanho">Tamanho:</label>
+          <input
+            type="number"
+            id="Tamanho"
+            name="Tamanho"
+            min="1"
+            max="10"
+            size="5"
+          />kg <input type="checkbox" id="Diet" name="Diet" value="Diet" />
+          <label for="Diet">Diet?</label>
+          <br />
+          <br />
+          <label for="Observações">Observações:</label>
+          <br />
+          <textarea
+            type="text"
+            name="Observações"
+            id="Observações"
+            placeholder="Observações Sobre o Pedido"
+            rows="3"
+            cols="80"
+          ></textarea>
+          <br />
+          <br />
+          <input type="submit" value="Enviar Pedido" />
+          <input type="reset" value="limpar" />
+        </form>
+      </main>
+    </div>
+  </body>
+</html>
